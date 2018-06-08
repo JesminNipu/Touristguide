@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Touristguide</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name_place_details">Place Details</string>
+    <string name="search">Search</string>
+
+    <string-array name="hotels_div">
+        <item>DHAKA</item>
+        <item>CHITTAGONG</item>
+        <item>BARISHAL</item>
+        <item>KHULNA</item>
+        <item>RAJSHAHI</item>
+        <item>RANGPUR</item>
+        <item>SYLHET</item>
+        <item>MYMENSINGH</item>
+    </string-array>
+
+
+    <string name="demo_temp">30</string>
+    <string name="temp">Temperature</string>
+    <string name="demo_min_temp">Minimum Temperature</string>
+    <string name="demo_max_temp">Maximum Temperature</string>
+    <string name="demo_pressure">Pressure</string>
+    <string name="demo_humidity">Humidity</string>
+    <string name="demo_rain">Rain</string>
+    <string name="demo_wind_speed">Wind Speed</string>
+    <string name="demo_wind_degree">Wind Degree</string>
+    <string name="demo_weather_status">Weather Status</string>
+    <string name="action_back">action_back</string>
+    <string name="emergency_place">Emergency Services</string>
+
+</resources>

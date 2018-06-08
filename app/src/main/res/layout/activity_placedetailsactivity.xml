@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nipu.touristguide.activity.Placedetailsactivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008080">
+
+        <ImageView
+            android:padding="2dp"
+            android:id="@+id/pls_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/c7"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs_2"
+            android:layout_marginTop="0dp"
+            app:tabMode="scrollable"
+            app:tabPaddingStart="10dp"
+            app:tabPaddingEnd="10dp"
+            android:background="#008080"
+            app:tabTextColor="#FFFFFF"
+            app:tabSelectedTextColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 1.app:tabSelectedTextColor jokhn select korbo tab ter color
+        2. app:tabPaddingStart hsse mutual tab start space
+        3.app:tabPaddingEnd hsse mutual tab ses space-->
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:padding="2dp"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+

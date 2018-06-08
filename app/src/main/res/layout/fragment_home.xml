@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.nipu.touristguide.firstablayout.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_home_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:background="@drawable/rounded_corner"
+        android:paddingBottom="20dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/pls_type_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+            android:layout_weight="20"
+            android:textColor="#000000"
+            android:typeface="monospace"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:text="ALL" />
+
+        <TextView
+            android:id="@+id/pls_type_historical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:layout_weight="20"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="Historical" />
+        <TextView
+            android:id="@+id/pls_type_nature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textSize="16sp"
+            android:text="Nature" />
+
+        <TextView
+            android:id="@+id/pls_type_parks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:layout_weight="20"
+            android:textColor="#000000"
+            android:typeface="monospace"
+            android:textSize="16sp"
+            android:text="Parks" />
+        <TextView
+            android:id="@+id/pls_type_museums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="20"
+            android:layout_marginRight="20dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:typeface="monospace"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="Museums" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/conversation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_home_cat" />
+</RelativeLayout>

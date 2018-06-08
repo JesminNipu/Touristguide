@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nipu.touristguide.firstablayout.BookHotelsFragment">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:padding="5dp"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:weightSum="100"
+           android:orientation="horizontal"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <EditText
+               android:id="@+id/hotel_search"
+               android:hint="@string/search"
+               android:layout_width="0dp"
+               android:layout_weight="65"
+               android:background="@drawable/rounded_corner"
+               android:textColor="#0000"
+               android:layout_height="wrap_content" />
+           <Spinner
+               android:id="@+id/hotel_div"
+               android:layout_width="0dp"
+               android:layout_weight="35"
+               android:textAlignment="center"
+               android:textColor="#0000"
+               android:background="@drawable/rounded_corner"
+               android:layout_height="match_parent">
+
+           </Spinner>
+       </LinearLayout>
+           <RadioGroup
+               android:id="@+id/rg_hotel"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_marginTop="8dp"
+               android:background="@drawable/rounded_corner"
+               android:weightSum="70"
+               android:layout_height="wrap_content">
+               <RadioButton
+                   android:checked="true"
+                   android:id="@+id/rb_hotel_all"
+                   android:padding="5dp"
+                   android:text="All"
+                   android:layout_weight="10"
+                   android:textColor="#000"
+                   android:typeface="monospace"
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <RadioButton
+                   android:id="@+id/rb_hotel_all2"
+                   android:padding="5dp"
+                   android:layout_weight="30"
+                   android:text="Best Value"
+                   android:textColor="#000"
+                   android:typeface="monospace"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <RadioButton
+                   android:id="@+id/rb_hotel_all3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="5dp"
+                   android:textColor="#000"
+                   android:layout_weight="30"
+                   android:text="Lowest Price"
+                   android:typeface="monospace" />
+           </RadioGroup>
+
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/hotels"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       </android.support.v7.widget.RecyclerView>
+   </LinearLayout>
+
+</FrameLayout>
