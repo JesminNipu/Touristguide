@@ -133,6 +133,7 @@ public class MapFragment extends Fragment implements View.OnClickListener {
             dialog.show();
 
         }
+        // network change
         else if(!isNetwork()){
             // show a message to enable gps and also internet
 //            Toast.makeText(getContext(), "Please Enable GPS and Internet!!", Toast.LENGTH_SHORT).show();
