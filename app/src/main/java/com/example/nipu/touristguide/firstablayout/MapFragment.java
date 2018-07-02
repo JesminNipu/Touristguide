@@ -2,10 +2,13 @@ package com.example.nipu.touristguide.firstablayout;
 
 
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,6 +18,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.nipu.touristguide.R;
+import com.example.nipu.touristguide.service.MyService;
+import com.example.nipu.touristguide.service.MyServices;
 
 import io.nlopez.smartlocation.OnLocationUpdatedListener;
 import io.nlopez.smartlocation.SmartLocation;
@@ -106,9 +111,48 @@ public class MapFragment extends Fragment implements View.OnClickListener {
                     getLocation("banks");
                     break;
             }
-        } else {
+        } else if(!isGPS()){
             // show a message to enable gps and also internet
-            Toast.makeText(getContext(), "Please Enable GPS and Internet!!", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getContext(), "Please Enable GPS and Internet!!", Toast.LENGTH_SHORT).show();
+//            MyServices.alertDialog(getContext(), "Please Enable GPS and Internet");
+           // MyServices.alertDialog(getContext(),"Please Enable GPS and Internet");
+            AlertDialog.Builder dialog = null;
+            dialog.setPositiveButton("GPS Settings", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                   Intent gpsIntent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                    getContext().startActivity(gpsIntent);
+                }
+            });
+            dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                }
+            });
+            dialog.show();
+
+        }
+        else if(!isNetwork()){
+            // show a message to enable gps and also internet
+//            Toast.makeText(getContext(), "Please Enable GPS and Internet!!", Toast.LENGTH_SHORT).show();
+//            MyServices.alertDialog(getContext(), "Please Enable GPS and Internet");
+            // MyServices.alertDialog(getContext(),"Please Enable GPS and Internet");
+            AlertDialog.Builder dialogN = null;
+            dialogN.setPositiveButton("Network Settings", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent gpsIntent = new Intent(Settings.ACTION_NETWORK_OPERATOR_SETTINGS);
+                    getContext().startActivity(gpsIntent);
+                }
+            });
+            dialogN.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                }
+            });
+            dialogN.show();
 
         }
     }

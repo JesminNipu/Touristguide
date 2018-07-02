@@ -15,7 +15,7 @@ import com.example.nipu.touristguide.firstablayout.WeatherFragment;
 
 public class TabsPager extends FragmentStatePagerAdapter {
 
-    String titles[] = new String[]{"Home","Book Hotels","Map","Weather"};
+    String titles[] = new String[]{"Home","Hotels","Nearby Services","Weather"};
 
     public TabsPager(FragmentManager fm) {
         super(fm);

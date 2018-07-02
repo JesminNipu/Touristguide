@@ -43,6 +43,7 @@ dependencies {
     implementation 'io.nlopez.smartlocation:library:3.3.3'
 
     implementation 'com.squareup.picasso:picasso:2.5.0'
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
 
     implementation files('libs/vip.parvez.unixtogmt.jar')
 }

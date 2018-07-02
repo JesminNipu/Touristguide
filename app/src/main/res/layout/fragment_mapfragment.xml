@@ -13,64 +13,152 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:padding="10dp"
             android:weightSum="100">
 
             <TextView
                 android:id="@+id/ttt"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:padding="2dp"
                 android:text="@string/emergency_place"
                 android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
                 android:typeface="monospace"
-                android:background="@drawable/rounded_corner_color"
+                android:background="@drawable/rounded_corner"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
             <LinearLayout
+                android:id="@+id/map_ll1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="50"
+                android:padding="2dp"
                 android:gravity="center"
+                android:orientation="horizontal"
                 android:weightSum="100">
-
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="vertical"
+                    android:weightSum="100">
                 <ImageView
                     android:id="@+id/hospital"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="50"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="25"
                     android:padding="5dp"
                     android:src="@drawable/hospital" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Hospitals"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:layout_weight="25"
+                        android:textColor="#000"
+                        android:typeface="monospace"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="vertical"
+                    android:weightSum="100">
 
                 <ImageView
                     android:id="@+id/police"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="50"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="25"
                     android:padding="5dp"
                     android:src="@drawable/police" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Police Station"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="25"
+                        android:textSize="22sp"
+                        android:textColor="#000"
+                        android:typeface="monospace"/>
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/map_ll2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="50"
+                android:padding="2dp"
                 android:gravity="center"
+                android:orientation="horizontal"
                 android:weightSum="100">
-
-                <ImageView
-                    android:id="@+id/restaurant"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
                     android:layout_weight="50"
-                    android:padding="5dp"
-                    android:src="@drawable/restaurant" />
-
-                <ImageView
-                    android:id="@+id/bank"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+                    <ImageView
+                        android:id="@+id/restaurant"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="25"
+                        android:padding="5dp"
+                        android:src="@drawable/restaurant" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Restaurant"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:layout_weight="25"
+                        android:textColor="#000"
+                        android:typeface="monospace"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
                     android:layout_weight="50"
-                    android:padding="5dp"
-                    android:src="@drawable/bank" />
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <ImageView
+                        android:id="@+id/bank"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="25"
+                        android:padding="5dp"
+                        android:src="@drawable/bank" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Bank"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="25"
+                        android:textSize="22sp"
+                        android:textColor="#000"
+                        android:typeface="monospace"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 

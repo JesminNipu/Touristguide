@@ -21,6 +21,8 @@
             android:padding="5dp"
             android:layout_width="match_parent"
             android:layout_height="180dp"
+            android:weightSum="100"
+
             android:orientation="vertical"
             >
 
@@ -29,15 +31,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="110dp"
                 android:scaleType="fitXY"
+                android:background="@drawable/img_cornerr"
+                android:layout_weight="60"
                 android:id="@+id/imageView2"
                 />
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:gravity="center"
                 android:textColor="#000000"
-                android:textStyle="bold"
+                android:layout_weight="40"
+                android:typeface="serif"
                 android:maxLines="2"
+                android:textStyle="bold"
                 android:layout_below="@id/imageView2"
                 android:id="@+id/textView2"
                 />

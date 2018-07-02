@@ -7,6 +7,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="action_searchicon">Search_icon</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -36,6 +37,6 @@
     <string name="demo_wind_degree">Wind Degree</string>
     <string name="demo_weather_status">Weather Status</string>
     <string name="action_back">action_back</string>
-    <string name="emergency_place">Emergency Services</string>
+    <string name="emergency_place">Nearby Emergency Services</string>
 
 </resources>

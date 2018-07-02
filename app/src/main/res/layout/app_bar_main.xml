@@ -17,14 +17,13 @@
             android:layout_width="match_parent"
             android:background="#053676"
             android:layout_height="?attr/actionBarSize"
-
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
         <android.support.design.widget.TabLayout
             android:layout_width="match_parent"
             android:id="@+id/tabs"
             app:tabMode="scrollable"
-            app:tabSelectedTextColor="#f6f9fa"
+            app:tabSelectedTextColor="#fff"
             app:tabTextColor="#f6f9fa"
             android:layout_height="match_parent">
 
@@ -40,25 +39,14 @@
                 android:textStyle="bold"
                 android:textSize="16sp"
 
-                android:text="Book Hotels"/>
+                android:text="Hotels"/>
 
             <android.support.design.widget.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:text="Bill Payments" />
-            <android.support.design.widget.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Emergency" />
-
-            <android.support.design.widget.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:text="Map" />
+                android:text="Nearby Services" />
             <android.support.design.widget.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

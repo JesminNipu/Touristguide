@@ -26,9 +26,9 @@
             app:tabMode="scrollable"
             app:tabPaddingStart="10dp"
             app:tabPaddingEnd="10dp"
-            android:background="#008080"
+            android:background="#053676"
             app:tabTextColor="#FFFFFF"
-            app:tabSelectedTextColor="#000000"
+            app:tabSelectedTextColor="#FFFFFF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

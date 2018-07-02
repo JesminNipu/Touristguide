@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity
     ViewPager viewPager;
     TabLayout tabLayout;
     TabsPager TabPager;
-    String titles[] = new String[]{"Home", "Book Hotels", "Map", "Weather"};
+    String titles[] = new String[]{"Home", "Hotels", "Nearby Services", "Weather"};
     Integer Numboftabs = 4;
 
     private static final int REQUEST = 0;
@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity
         /* for drawer*/
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
         setSupportActionBar(toolbar);
         setNavigationViewListner();//setnav view listener
 
@@ -170,7 +171,7 @@ public class MainActivity extends AppCompatActivity
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         if (requestCode==REQUEST){
             if (PermissionUtil.verifyPermissions(grantResults)) {
-               // startMainActivity();
+                // startMainActivity();
             }else{
                 Toast.makeText(this,"!!!Permission Denied!!!",Toast.LENGTH_LONG).show();
             }
