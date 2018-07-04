@@ -96,7 +96,7 @@ public class MapFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (true ||(isGPS() && isNetwork())) {
+        if ((isGPS() && isNetwork())) {
             switch (v.getId()) {
                 case R.id.hospital:
                     getLocation("hospitals");
